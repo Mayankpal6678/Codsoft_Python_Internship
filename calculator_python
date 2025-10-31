@@ -1,0 +1,21 @@
+# simple calculator
+
+print("Calculator Program")
+
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+op = input("Enter operator (+,-,*,/): ")
+
+if op == '+':
+    print("Answer is:", a + b)
+elif op == '-':
+    print("Answer is:", a - b)
+elif op == '*':
+    print("Answer is:", a * b)
+elif op == '/':
+    if b != 0:
+        print("Answer is:", a / b)
+    else:
+        print("Cannot divide by 0")
+else:
+    print("Wrong operator")
